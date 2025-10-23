@@ -4,6 +4,18 @@
 The clinical deployment of artificial intelligence (AI) solutions for assessing cardiovascular disease (CVD) risk in 12-lead electrocardiography (ECG) is hindered by limitations in interpretability and explainability. To address this, we present xGNN4MI, an open-source framework for graph neural networks (GNNs) in ECG modeling for interpretable CVD prediction. Our framework facilitates modeling clinically relevant spatial relationships between ECG leads and their temporal dynamics. We also developed specific explainable AI (XAI) and visualization tools to identify ECG leads crucial to the model's decision-making process, enabling a systematic comparison with established clinical knowledge. We evaluated xGNN4MI on two challenging tasks: diagnostic superclass classification and localization of myocardial infarction. Our findings show that the interpretable ECG-GNN models demonstrate good performance across the tasks. XAI analysis revealed clinically meaningful training effects, such as differentiating between anteroseptal and inferior myocardial infarction. Our work demonstrates the potential of ECG-GNNs for providing trustworthy and interpretable AI-based CVD diagnosis.
 
 ## Results
+<table>
+  <tr>
+    <td align="center">
+      <img src="ASMI_MEAN.svg" width="300"/><br/>
+      <sub><b>Figure 1:</b> Color-coded mean node and edge importance scores for correctly classified ASMI patients on the PRB-XL dataset.</sub>
+    </td>
+    <td align="center">
+      <img src="IMI_MEAN.svg" width="300"/><br/>
+      <sub><b>Figure 2:</b> Color-coded mean node and edge importance scores for correctly classified IMI patients on the PRB-XL dataset.</sub>
+    </td>
+  </tr>
+</table>
 
 ## Datasets
 ### PTB-XL
@@ -14,9 +26,20 @@ https://doi.org/10.1038/s41597-020-0495-6
 The data of the SHIP study cannot be made publicly available due to the informed consent of the study participants, but it can be accessed through a data application form available at https://fvcm.med.uni-greifswald.de/ for researchers who meet the criteria for access to confidential data.
 
 ## License
+This work is licensed under a CC BY 4.0 License
 
 ## Reference
 If you find our work useful in your research or use parts of this code please consider citing our paper:
+```
+@misc{maurer_xgnn4mi_2025,
+	title = {{xGNN4MI}: {Explainability} of {Graph} {Neural} {Networks} in 12-lead {Electrocardiography} for {Cardiovascular} {Disease} {Classification}},
+	url = {https://www.researchsquare.com/article/rs-7721630/v1},
+	doi = {10.21203/rs.3.rs-7721630/v1},
+	publisher = {In Review},
+	author = {Maurer, Miriam Cindy and Hempel, Philip and Steinhaus, Kristin Elisabeth and Chereda, Hryhorii and Vollmer, Marcus and Krefting, Dagmar and Spicher, Nicolai and Hauschild, Anne-Christin},
+	year = {2025},
+}
+```
 
 ## Copyright
 
