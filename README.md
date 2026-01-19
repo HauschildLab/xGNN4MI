@@ -44,12 +44,13 @@ If you find our work useful in your research or use parts of this code please co
 
 ## Copyright
 
-<p align="center">
-  <img src="GOE_logo_Quer_IPC_Farbe.eps" height="60" style="margin-right:20px"/>
-  <img src="UMG_LOGO_2024_Monitor_Farbe_rgb_transparent.png" height="60" style="margin-right:20px"/>
-  <img src="CIDAS.png" height="60" style="margin-right:20px"/>
+<p align="center" style="display:flex; align-items:center; justify-content:center;">
+  <img src="GOE_Logo_Quer_IPC_Farbe.png" height="50" style="margin-right:24px"/>
+  <img src="UMG_LOGO_2024_Monitor_Farbe_rgb_transparent.png" height="55" style="margin-right:24px"/>
+  <img src="CIDAS.png" height="65" style="margin-right:24px"/>
   <img src="JLU_logo.png" height="60"/>
 </p>
+
 
 
 ## Acknowledgement
