@@ -26,8 +26,9 @@ https://doi.org/10.1038/s41597-020-0495-6
 The data of the SHIP study cannot be made publicly available due to the informed consent of the study participants, but it can be accessed through a data application form available at https://fvcm.med.uni-greifswald.de/ for researchers who meet the criteria for access to confidential data.
 
 ## License
-This work is licensed under a CC BY-NC 4.0 License
-![CC BY-NC 4.0] (CC-BY-NC.png)
+This work is licensed under a CC BY-NC 4.0 License 
+
+<img src="CC-BY-NC.png" width="120"/>
 
 ## Reference
 If you find our work useful in your research or use parts of this code please consider citing our paper:
@@ -43,14 +44,12 @@ If you find our work useful in your research or use parts of this code please co
 ```
 
 ## Copyright
-
-<p align="center" style="display:flex; align-items:center; justify-content:center;">
-  <img src="GOE_Logo_Quer_IPC_Farbe.png" height="50" style="margin-right:24px"/>
-  <img src="UMG_LOGO_2024_Monitor_Farbe_rgb_transparent.png" height="55" style="margin-right:24px"/>
-  <img src="CIDAS.png" height="65" style="margin-right:24px"/>
+<p align="center">
+  <img src="GOE_Logo_Quer_IPC_Farbe.png" height="50"/>
+  <img src="UMG_LOGO_2024_Monitor_Farbe_rgb_transparent.png" height="55"/>
+  <img src="CIDAS.png" height="65"/>
   <img src="JLU_logo.png" height="60"/>
 </p>
-
 
 
 ## Acknowledgement
