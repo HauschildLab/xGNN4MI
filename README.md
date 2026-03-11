@@ -1,18 +1,25 @@
 # xGNN4MI: Explainability of Graph Neural Networks in 12-lead Electrocardiography for Cardiovascular Disease Classification
 
 ## Abstract
-The clinical deployment of artificial intelligence (AI) solutions for assessing cardiovascular disease (CVD) risk in 12-lead electrocardiography (ECG) is hindered by limitations in interpretability and explainability. To address this, we present xGNN4MI, an open-source framework for graph neural networks (GNNs) in ECG modeling for interpretable CVD prediction. Our framework facilitates modeling clinically relevant spatial relationships between ECG leads and their temporal dynamics. We also developed specific explainable AI (XAI) and visualization tools to identify ECG leads crucial to the model's decision-making process, enabling a systematic comparison with established clinical knowledge. We evaluated xGNN4MI on two challenging tasks: diagnostic superclass classification and localization of myocardial infarction. Our findings show that the interpretable ECG-GNN models demonstrate good performance across the tasks. XAI analysis revealed clinically meaningful training effects, such as differentiating between anteroseptal and inferior myocardial infarction. Our work demonstrates the potential of ECG-GNNs for providing trustworthy and interpretable AI-based CVD diagnosis.
+The clinical deployment of artificial intelligence (AI) solutions for assessing cardiovascular disease (CVD) risk in 12-lead electrocardiography (ECG) is hindered by limitations in interpretability and explainability. 
+To address this, we present xGNN4MI, an open-source framework for graph neural networks (GNNs) in ECG modeling for interpretable CVD prediction. 
+Our framework facilitates modeling clinically relevant spatial relationships between ECG leads and their temporal dynamics. 
+We integrated explainable AI (XAI) and developed a task-specific XAI evaluation and visualization workflow to identify ECG leads crucial to the model’s decision-making process, enabling a systematic comparison with established clinical knowledge. 
+We evaluated xGNN4MI on two challenging tasks: diagnostic superclass classification and localization of myocardial infarction. 
+Our findings show that the interpretable ECG-GNN models demonstrate good performance across the tasks. 
+XAI analysis revealed clinically meaningful training effects, such as differentiating between anteroseptal and inferior myocardial infarction. 
+Our work demonstrates the potential of ECG-GNNs for providing trustworthy and interpretable AI-based CVD diagnosis.
 
 ## Results
 <table>
   <tr>
     <td align="center">
       <img src="ASMI_MEAN.svg" width="300"/><br/>
-      <sub><b>Figure 1:</b> Color-coded mean node and edge importance scores for correctly classified ASMI patients on the PRB-XL dataset.</sub>
+      <sub><b>Figure 1:</b> Color-coded mean node and edge importance scores for correctly classified ASMI patients on the PTB-XL dataset.</sub>
     </td>
     <td align="center">
       <img src="IMI_MEAN.svg" width="300"/><br/>
-      <sub><b>Figure 2:</b> Color-coded mean node and edge importance scores for correctly classified IMI patients on the PRB-XL dataset.</sub>
+      <sub><b>Figure 2:</b> Color-coded mean node and edge importance scores for correctly classified IMI patients on the PTB-XL dataset.</sub>
     </td>
   </tr>
 </table>
@@ -24,6 +31,14 @@ https://doi.org/10.1038/s41597-020-0495-6
 
 ### SHIP
 The data of the SHIP study cannot be made publicly available due to the informed consent of the study participants, but it can be accessed through a data application form available at https://fvcm.med.uni-greifswald.de/ for researchers who meet the criteria for access to confidential data.
+
+## Repository structure
+
+- `code/`: source code, model architectures, preprocessing, training, evaluation, and visualization notebook
+- `code/utils/`: utility functions used by the training and explainability scripts
+- `code/MI_res/`: example trained MI model checkpoint and example output CSV files for running the notebook
+
+Please run scripts from within the `code/` directory so that imports and relative paths resolve correctly.
 
 ## License
 This work is licensed under a CC BY-NC 4.0 License 
@@ -65,15 +80,6 @@ If you find our work useful in your research or use parts of this code please co
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="JLU_logo.png" height="58"/>
 </p>
-
-
-
-
-
-
-
-
-
 
 ## Acknowledgement
 We gratefully acknowledge the computing time granted by the Resource Allocation Board and provided on the supercomputer Emmy at
