@@ -95,14 +95,12 @@ def create_graph_from_sample(record, num_patches=10):
         for lead1 in limb_leads:
             for lead2 in limb_leads:
                 if lead1 != lead2:
-                    num_patches = len(signal[:, sig_names.index(lead1)]) // patch_size
                     for j in range(num_patches):
                         G.add_edge(f"{lead1}_p{j}", f"{lead2}_p{j}")
         
         for lead1 in chest_leads:
             for lead2 in chest_leads:
                 if lead1 != lead2:
-                    num_patches = len(signal[:, sig_names.index(lead1)]) // patch_size
                     for j in range(num_patches):
                         G.add_edge(f"{lead1}_p{j}", f"{lead2}_p{j}")
         
@@ -110,7 +108,6 @@ def create_graph_from_sample(record, num_patches=10):
         for lead1 in specific_leads:
             for lead2 in specific_leads:
                 if lead1 != lead2:
-                    num_patches = len(signal[:, sig_names.index(lead1)]) // patch_size
                     for j in range(num_patches):
                         G.add_edge(f"{lead1}_p{j}", f"{lead2}_p{j}")
                     
